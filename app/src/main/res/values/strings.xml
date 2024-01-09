@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">coloring book</string>
+    <string-array name="Levels">
+        <item>Маляр</item>
+        <item>Начинающий художник</item>
+        <item>Свободный художник</item>
+        <item>Любитель красок</item>
+        <item>Практикующий художник</item>
+        <item>Ценитель живописи</item>
+        <item>Умелец</item>
+        <item>Чудодей</item>
+        <item>Мастер кисти</item>
+        <item>Картинный гуру</item>
+    </string-array>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.45"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/pink">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ваш уровень:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Levels"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.55">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/pink">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Новые"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+        </View>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Новые"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+        </View>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Новые"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+        </View>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Новые"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+        </View>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Новые"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+        </View>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Новые"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+        </View>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Конец"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:scrollbars="vertical">
+    <GridView
+        android:id="@+id/gvImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth">
+    </GridView>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/pink"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>
+
